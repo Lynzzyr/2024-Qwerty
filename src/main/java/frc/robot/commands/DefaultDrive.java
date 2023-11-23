@@ -15,8 +15,8 @@ public class DefaultDrive extends Command {
     private final Drivetrain m_drivetrain;
     private final CommandXboxController m_controller;
 
-    public DefaultDrive(Drivetrain drivetrain, CommandXboxController controller) {
-        m_drivetrain = drivetrain;
+    public DefaultDrive(CommandXboxController controller) {
+        m_drivetrain = Drivetrain.getInstance();
         m_controller = controller;
 
         // Use addRequirements() here to declare subsystem dependencies.
